@@ -96,6 +96,14 @@ section {
   font-size: 1.2rem;
 }
 
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
 .containerbb + .containerbb {
   margin-left: 20px; /* Espacement entre les conteneurs */
 }
@@ -324,13 +332,13 @@ sup {
 }
 
 a {
-  color: #8ea367;
+  color: #717171;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #ff3d0b;
+  color: #8ea367;
   text-decoration: underline;
 }
 
