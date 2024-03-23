@@ -72,14 +72,28 @@ section {
 }
 
 .containerbb {
-  width: 1500px; /* Taille du carré */
-  height: 800px; /* Taille du carré */
+  /* 60% de la hauteur de l'écran */
+  max-width: 1500px; /* Taille maximale du conteneur */
   background-color: #ffffff;
   border: 3px solid #8ea367;
   border-radius: 10%;
   text-align: center;
   padding: 20px;
-  box-shadow: #0effff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Syntaxe correcte pour la définition d'une ombre */
+  margin: 0 auto; /* Pour centrer le conteneur horizontalement */
+}
+
+.containerbb img {
+  max-width: 100%; /* Pour que les images s'adaptent à la largeur du conteneur */
+  height: auto; /* Pour maintenir le ratio hauteur/largeur */
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-title {
+  font-size: 1.2rem;
 }
 
 .containerbb + .containerbb {
